@@ -16,6 +16,11 @@
     <%= form.text_field :name, id: :driver_name %>
   </div>
 
+  <div class="field">
+    <%= form.label :car_id %><br/>
+    <%= form.select :car_id, options_for_select(Car.all.map{|s|[s.id.to_s + " " + s.car_type + " " + s.model]}) %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>

@@ -15,37 +15,59 @@ class CarsController < ApplicationController
   # GET /cars/new
   def new
     @car = Car.new
+    @photo = Photo.new
   end
 
   # GET /cars/1/edit
   def edit
+    if (@car.photo_id.nil?)
+      @photo = Photo.new
+    else
+      @photo = Photo.find(@car.photo_id)
+    end
   end
 
   # POST /cars
   # POST /cars.json
   def create
     @car = Car.new(car_params)
+    @photo = Photo.new(photo_params)
 
     respond_to do |format|
-      if @car.save
-        format.html { redirect_to @car, notice: 'Car was successfully created.' }
-        format.json { render :show, status: :created, location: @car }
+      if @photo.save
+        @car.photo_id = @photo.id
+        if @car.save
+          format.html { redirect_to @car, notice: 'Car was successfully created.' }
+          format.json { render :show, status: :created, location: @car }
+        else
+          format.html { render :new }
+          format.json { render json: @car.errors, status: :unprocessable_entity }
+        end
       else
         format.html { render :new }
         format.json { render json: @car.errors, status: :unprocessable_entity }
       end
+
     end
   end
 
   # PATCH/PUT /cars/1
   # PATCH/PUT /cars/1.json
   def update
+    @photo = Photo.new(photo_params)
+
     respond_to do |format|
-      if @car.update(car_params)
-        format.html { redirect_to @car, notice: 'Car was successfully updated.' }
-        format.json { render :show, status: :ok, location: @car }
+      if @photo.save
+        @car.photo_id = @photo.id
+        if @car.update(car_params)
+          format.html { redirect_to @car, notice: 'Car was successfully updated.' }
+          format.json { render :show, status: :ok, location: @car }
+        else
+          format.html { render :edit }
+          format.json { render json: @car.errors, status: :unprocessable_entity }
+        end
       else
-        format.html { render :edit }
+        format.html { render :new }
         format.json { render json: @car.errors, status: :unprocessable_entity }
       end
     end
@@ -69,6 +91,11 @@ class CarsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def car_params
-      params.require(:car).permit(:color, :year, :model, :car_type)
+      params.require(:car).permit(:color, :year, :model, :car_type, :photo_id)
+    end
+
+    # Allows photos to be uploaded through the car controller
+    def photo_params
+      params.require(:car).permit(:image)
     end
 end

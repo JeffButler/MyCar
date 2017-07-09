@@ -31,6 +31,21 @@
     <%= form.text_field :car_type, id: :car_car_type %>
   </div>
 
+
+  <div class="field">
+      <%= form.label :car_photo_id %>
+      <%= render 'shared/errors', object: @photo %>
+      <% if !@photo.id.nil? %>
+        <div class="photo-image">
+          <%= render @photo %>
+        </div>
+      <% end %>
+      <div class="form-group">
+
+        <%= form.file_field :image, class: 'form-control'%>
+      </div>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>

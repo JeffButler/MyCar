@@ -7,6 +7,7 @@
     <tr>
       <th>Time</th>
       <th>Type</th>
+      <th>Car</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,6 +17,7 @@
       <tr>
         <td><%= accident.time %></td>
         <td><%= accident.accident_type %></td>
+        <td><%= get_car_info(accident.car_id) %></td>
         <td><%= link_to 'Show', accident %></td>
         <td><%= link_to 'Edit', edit_accident_path(accident) %></td>
         <td><%= link_to 'Destroy', accident, method: :delete, data: { confirm: 'Are you sure?' } %></td>

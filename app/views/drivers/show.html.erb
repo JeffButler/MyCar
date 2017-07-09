@@ -5,5 +5,10 @@
   <%= @driver.name %>
 </p>
 
+<p>
+  <strong>Car:</strong>
+  <%= get_car_info_for_driver(@driver.car_id) %>
+</p>
+
 <%= link_to 'Edit', edit_driver_path(@driver) %> |
 <%= link_to 'Back', drivers_path %>

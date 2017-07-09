@@ -9,6 +9,8 @@ group :production do
   gem 'pg'
 end
 
+# Helps upload images
+gem "paperclip", "~> 4.2"
 # Helps print things out pretty in rails console
 gem 'awesome_print', :require => 'ap'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

@@ -5,6 +5,7 @@
 <table>
   <thead>
     <tr>
+      <th>Picture</th>
       <th>Color</th>
       <th>Year</th>
       <th>Model</th>
@@ -16,6 +17,7 @@
   <tbody>
     <% @cars.each do |car| %>
       <tr>
+        <td class="photo-image"><%= render get_photos(car.photo_id) %></td>
         <td><%= car.color %></td>
         <td><%= car.year %></td>
         <td><%= car.model %></td>

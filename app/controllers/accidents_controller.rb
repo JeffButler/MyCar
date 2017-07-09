@@ -69,6 +69,6 @@ class AccidentsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def accident_params
-      params.require(:accident).permit(:time, :type)
+      params.require(:accident).permit(:time, :accident_type, :car_id)
     end
 end

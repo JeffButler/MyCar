@@ -17,8 +17,13 @@
   </div>
 
   <div class="field">
-    <%= form.label :type %>
-    <%= form.text_field :type, id: :accident_type %>
+    <%= form.label :accident_type %>
+    <%= form.text_field :accident_type, id: :accident_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :car_id %><br/>
+    <%= form.select :car_id, options_for_select(Car.all.map{|s|[s.id.to_s + " " + s.car_type + " " + s.model]}) %>
   </div>
 
   <div class="actions">
