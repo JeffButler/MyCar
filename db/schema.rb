@@ -10,21 +10,36 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170705031257) do
+ActiveRecord::Schema.define(version: 20170709021619) do
 
-  create_table "categories", force: :cascade do |t|
+  create_table "accidents", force: :cascade do |t|
+    t.datetime "time"
+    t.string "accident_type"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "car_id"
+    t.index ["car_id"], name: "index_accidents_on_car_id"
+  end
+
+  create_table "cars", force: :cascade do |t|
+    t.string "color"
+    t.integer "year"
+    t.string "model"
+    t.string "car_type"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "driver_id"
+    t.integer "accident_id"
+    t.index ["accident_id"], name: "index_cars_on_accident_id"
+    t.index ["driver_id"], name: "index_cars_on_driver_id"
+  end
+
+  create_table "drivers", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  end
-
-  create_table "posts", force: :cascade do |t|
-    t.string "title"
-    t.text "body"
-    t.integer "category_id"
-    t.integer "author_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer "car_id"
+    t.index ["car_id"], name: "index_drivers_on_car_id"
   end
 
 end

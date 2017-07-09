@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @accident.time %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @accident.accident_type %>
+</p>
+
+<%= link_to 'Edit', edit_accident_path(@accident) %> |
+<%= link_to 'Back', accidents_path %>

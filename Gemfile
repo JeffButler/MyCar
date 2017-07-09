@@ -9,7 +9,8 @@ group :production do
   gem 'pg'
 end
 
-
+# Helps print things out pretty in rails console
+gem 'awesome_print', :require => 'ap'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.1'
 # Use Puma as the app server
