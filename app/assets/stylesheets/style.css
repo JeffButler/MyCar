@@ -158,6 +158,17 @@ a:hover {
   color: #fff;
 }
 
+.hero a {
+  color: white;
+  margin: 4px;
+  padding: 30px;
+  width: 200px;
+}
+
+.hero .steering-wheel img{
+  max-width: 18px;
+}
+
 /* ==================================================
   Header Styling
 ================================================== */
