@@ -2,39 +2,35 @@
   <div class="container">
 
     <title>Cars</title>
-    <%= link_to "Back",  :back %>
-    <%= link_to 'New Car', new_car_path %>
+    <br>
+    <%= link_to "Back",  :back, :class => "btn btn-success" %>
     <br>
       <div id="products" class="row list-group">
         <% @cars.each do |car| %>
-          <div class="item list-group-item col-xs-4 col-lg-4">
-              <div class="thumbnail photo-image">
-                  <img class="group list-group-image">
-                    <%= render get_photos(car.photo_id) %></td>
-                  </img>
-                  <div class="caption">
-                      <h4 class="group inner list-group-item-heading">
-                          Car <% car.id.to_s %> </h4>
-                      <p class="group inner list-group-item-text">
-                        <%= car.year.to_s + " " + car.car_type + " " + car.model + " " + car.color %></p>
-                      <div class="row">
-                          <div class="col-xs-12 col-md-6">
-                            <span>
-                              <%= link_to "Edit", edit_car_path(car), :class => "btn btn-success"%>
-                            </span>
-                          </div>
-                      </div>
-                      <div class="row">
-                          <div class="col-xs-12 col-md-6">
-                            <span>
-                              <%= button_to "Delete", car, :class => "btn btn-success", :method => :delete, data: { confirm: 'Are you sure?' }  %>
-                            </span>
-                          </div>
-                      </div>
-                  </div>
+          <div class="item-details">
+            <div class="photo-image">
+                <img class="group list-group-image">
+                  <%= render get_photos(car.photo_id) %>
+                </img>
+            </div>
+            <div class="item-description">
+                <h4 class="group inner list-group-item-heading">
+                    Car <% car.id.to_s %> </h4>
+                <p class="group inner list-group-item-text">
+                  <%= car.year.to_s + " " + car.car_type + " " + car.model + " " + car.color %></p>
+             </div>
+            <div class="action-items">
+              <div>
+                <%= link_to "Edit", edit_car_path(car), :class => "btn btn-success"%>
               </div>
+              <div>
+                <%= button_to "Delete", car, :class => "btn btn-success", :method => :delete, data: { confirm: 'Are you sure?' }  %>
+              </div>
+            </div>
           </div>
           <% end %>
       </div>
+      <br>
+      <%= link_to 'New Car', new_car_path, :class => "btn btn-success" %>
   </div>
 </div>

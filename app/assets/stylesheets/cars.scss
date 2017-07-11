@@ -1,7 +1,43 @@
 // Place all the styles related to the Cars controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.photo-image img{
-  max-width: 300px;
-  //border-radius: 50%;
+@media screen and (max-width: 960px) {
+  .photo-image img{
+    max-width: 300px;
+    //border-radius: 50%;
+  }
+  .item-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .item-details {
+    display: flex;
+    justify-content: space-between;
+  }
+  .action-items
+  {
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 640px) {
+  .photo-image img{
+    max-width: 200px;
+    //border-radius: 50%;
+  }
+  .item-details {
+    align-items: center;
+    flex-direction: column;
+  }
+  .action-items
+  {
+    display: flex;
+    align-items: center;
+  }
+  .item-description {
+    padding: 0;
+  }
 }
