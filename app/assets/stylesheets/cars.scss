@@ -1,7 +1,7 @@
 // Place all the styles related to the Cars controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-@media screen and (max-width: 960px) {
+@media screen and (min-width: 641px) {
   .photo-image img{
     max-width: 300px;
     //border-radius: 50%;
