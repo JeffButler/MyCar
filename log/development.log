@@ -10974,3 +10974,505 @@ Processing by DriversController#index as HTML
 Completed 200 OK in 27ms (Views: 24.7ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/accidents" for 127.0.0.1 at 2017-07-10 19:03:15 -0700
+Processing by AccidentsController#index as HTML
+  Rendering accidents/index.html.erb within layouts/application
+  [1m[36mAccident Load (0.1ms)[0m  [1m[34mSELECT "accidents".* FROM "accidents"[0m
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered accidents/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 29ms (Views: 27.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/accidents" for 127.0.0.1 at 2017-07-10 19:08:55 -0700
+Processing by AccidentsController#index as HTML
+  Rendering accidents/index.html.erb within layouts/application
+  Rendered accidents/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/jeffbutler/Desktop/MyCar/app/views/accidents/index.html.erb:28: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;   end 
+               ^
+/Users/jeffbutler/Desktop/MyCar/app/views/accidents/index.html.erb:34: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/Users/jeffbutler/Desktop/MyCar/app/views/accidents/index.html.erb:36: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/accidents/index.html.erb:28: syntax error, unexpected keyword_end, expecting ')'
+app/views/accidents/index.html.erb:34: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/accidents/index.html.erb:36: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/accidents" for 127.0.0.1 at 2017-07-10 19:09:55 -0700
+Processing by AccidentsController#index as HTML
+  Rendering accidents/index.html.erb within layouts/application
+  Rendered accidents/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/jeffbutler/Desktop/MyCar/app/views/accidents/index.html.erb:28: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;   end 
+               ^
+/Users/jeffbutler/Desktop/MyCar/app/views/accidents/index.html.erb:34: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/Users/jeffbutler/Desktop/MyCar/app/views/accidents/index.html.erb:36: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/accidents/index.html.erb:28: syntax error, unexpected keyword_end, expecting ')'
+app/views/accidents/index.html.erb:34: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/accidents/index.html.erb:36: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/accidents" for 127.0.0.1 at 2017-07-10 19:11:05 -0700
+Processing by AccidentsController#index as HTML
+  Rendering accidents/index.html.erb within layouts/application
+  [1m[36mAccident Load (0.2ms)[0m  [1m[34mSELECT "accidents".* FROM "accidents"[0m
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered accidents/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 28ms (Views: 25.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/drivers" for 127.0.0.1 at 2017-07-10 19:11:09 -0700
+Processing by DriversController#index as HTML
+  Rendering drivers/index.html.erb within layouts/application
+  [1m[36mDriver Load (0.2ms)[0m  [1m[34mSELECT "drivers".* FROM "drivers"[0m
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Car Load (0.0ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered drivers/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 24ms (Views: 21.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/drivers" for 127.0.0.1 at 2017-07-10 19:11:10 -0700
+Processing by DriversController#index as HTML
+  Rendering drivers/index.html.erb within layouts/application
+  [1m[36mDriver Load (0.3ms)[0m  [1m[34mSELECT "drivers".* FROM "drivers"[0m
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Car Load (0.0ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered drivers/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-10 19:11:15 -0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/drivers" for 127.0.0.1 at 2017-07-10 19:11:17 -0700
+Processing by DriversController#index as HTML
+  Rendering drivers/index.html.erb within layouts/application
+  [1m[36mDriver Load (0.1ms)[0m  [1m[34mSELECT "drivers".* FROM "drivers"[0m
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Car Load (0.0ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered drivers/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 25ms (Views: 22.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-10 19:11:20 -0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 29ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-07-10 19:11:21 -0700
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered photos/_photo.html.erb (0.8ms)
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered photos/_photo.html.erb (0.3ms)
+  Rendered cars/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 31ms (Views: 28.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-10 19:11:25 -0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 27ms (Views: 25.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accidents" for 127.0.0.1 at 2017-07-10 19:11:27 -0700
+Processing by AccidentsController#index as HTML
+  Rendering accidents/index.html.erb within layouts/application
+  [1m[36mAccident Load (0.2ms)[0m  [1m[34mSELECT "accidents".* FROM "accidents"[0m
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered accidents/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 26ms (Views: 23.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-10 19:11:29 -0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 31ms (Views: 28.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/drivers" for 127.0.0.1 at 2017-07-10 19:11:34 -0700
+Processing by DriversController#index as HTML
+  Rendering drivers/index.html.erb within layouts/application
+  [1m[36mDriver Load (0.1ms)[0m  [1m[34mSELECT "drivers".* FROM "drivers"[0m
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Car Load (0.0ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered drivers/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 25ms (Views: 23.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-10 19:11:42 -0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 26ms (Views: 23.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-07-10 19:11:44 -0700
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered photos/_photo.html.erb (1.0ms)
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered photos/_photo.html.erb (0.4ms)
+  Rendered cars/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 30ms (Views: 27.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-10 19:11:46 -0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 25ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-07-10 19:13:30 -0700
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered photos/_photo.html.erb (0.8ms)
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered photos/_photo.html.erb (0.6ms)
+  Rendered cars/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 30ms (Views: 27.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-10 19:13:58 -0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 29ms (Views: 26.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accidents" for 127.0.0.1 at 2017-07-10 19:13:59 -0700
+Processing by AccidentsController#index as HTML
+  Rendering accidents/index.html.erb within layouts/application
+  [1m[36mAccident Load (0.2ms)[0m  [1m[34mSELECT "accidents".* FROM "accidents"[0m
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered accidents/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 27ms (Views: 24.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-10 19:14:06 -0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 25ms (Views: 23.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-10 19:14:28 -0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-07-10 19:14:30 -0700
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered photos/_photo.html.erb (1.0ms)
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered photos/_photo.html.erb (0.4ms)
+  Rendered cars/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 27ms (Views: 25.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-10 19:14:33 -0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 24ms (Views: 21.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/drivers" for 127.0.0.1 at 2017-07-10 19:14:33 -0700
+Processing by DriversController#index as HTML
+  Rendering drivers/index.html.erb within layouts/application
+  [1m[36mDriver Load (0.1ms)[0m  [1m[34mSELECT "drivers".* FROM "drivers"[0m
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Car Load (0.0ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered drivers/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 36ms (Views: 33.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-10 19:14:37 -0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 28ms (Views: 26.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-07-10 19:14:38 -0700
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered photos/_photo.html.erb (0.9ms)
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered photos/_photo.html.erb (0.5ms)
+  Rendered cars/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 32ms (Views: 29.4ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/cars/2" for 127.0.0.1 at 2017-07-10 19:14:40 -0700
+Processing by CarsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"a5Qu8wusEJwsmpHb4Ie0b5ZJppjSdWwCfPc5kuHomGra5L7rM8uxBx+Tx9uzDe/ph5b5Z8h4eR/BEwv8A3bdZg==", "id"=>"2"}
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.3ms)[0m  [1m[31mDELETE FROM "cars" WHERE "cars"."id" = ?[0m  [["id", 2]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/cars
+Completed 302 Found in 5ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-07-10 19:14:40 -0700
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered photos/_photo.html.erb (1.2ms)
+  Rendered cars/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 24ms (Views: 22.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-07-10 19:14:41 -0700
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered photos/_photo.html.erb (0.8ms)
+  Rendered cars/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 25ms (Views: 23.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-07-10 19:14:42 -0700
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered photos/_photo.html.erb (1.1ms)
+  Rendered cars/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 32ms (Views: 30.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-07-10 19:14:43 -0700
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered photos/_photo.html.erb (0.7ms)
+  Rendered cars/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 28ms (Views: 26.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-07-10 19:14:44 -0700
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered photos/_photo.html.erb (1.2ms)
+  Rendered cars/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 34ms (Views: 31.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-07-10 19:14:44 -0700
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered photos/_photo.html.erb (1.0ms)
+  Rendered cars/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 29ms (Views: 27.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-07-10 19:14:44 -0700
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered photos/_photo.html.erb (1.1ms)
+  Rendered cars/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 36ms (Views: 34.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-07-10 19:14:45 -0700
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered photos/_photo.html.erb (1.6ms)
+  Rendered cars/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 38ms (Views: 36.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-07-10 19:14:45 -0700
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered photos/_photo.html.erb (1.4ms)
+  Rendered cars/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 40ms (Views: 37.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-07-10 19:14:45 -0700
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered photos/_photo.html.erb (1.4ms)
+  Rendered cars/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 27ms (Views: 24.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-07-10 19:14:46 -0700
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered photos/_photo.html.erb (1.3ms)
+  Rendered cars/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 26ms (Views: 24.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-07-10 19:14:47 -0700
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered photos/_photo.html.erb (1.2ms)
+  Rendered cars/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 27ms (Views: 25.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-07-10 19:14:56 -0700
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered photos/_photo.html.erb (0.8ms)
+  Rendered cars/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 23ms (Views: 21.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-07-10 19:15:21 -0700
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Car Load (0.0ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Car Load (0.0ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Car Load (0.0ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered cars/index.html.erb within layouts/application (90.6ms)
+Completed 500 Internal Server Error in 94ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `home_path' for #<#<Class:0x007fc79c8ec9c8>:0x007fc79be817e0>
+Did you mean?  home_index_path):
+    2:   <div class="container">
+    3:     <h1>Cars</h1>
+    4:     <br>
+    5:     <%= link_to "Home",  :home, :class => "btn btn-success" %>
+    6:     <br>
+    7:       <div id="products" class="row list-group">
+    8:         <% @cars.each do |car| %>
+  
+app/views/cars/index.html.erb:5:in `_app_views_cars_index_html_erb___2870725718623692314_70247645450600'
+Started GET "/cars" for 127.0.0.1 at 2017-07-10 19:15:30 -0700
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Car Load (0.0ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Car Load (0.0ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Car Load (0.0ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered cars/index.html.erb within layouts/application (107.2ms)
+Completed 500 Internal Server Error in 111ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `index_path' for #<#<Class:0x007fc79c8ec9c8>:0x007fc7976d6850>
+Did you mean?  video_path):
+    2:   <div class="container">
+    3:     <h1>Cars</h1>
+    4:     <br>
+    5:     <%= link_to "Home",  :index, :class => "btn btn-success" %>
+    6:     <br>
+    7:       <div id="products" class="row list-group">
+    8:         <% @cars.each do |car| %>
+  
+app/views/cars/index.html.erb:5:in `_app_views_cars_index_html_erb___2870725718623692314_70247607876880'
+Started GET "/cars" for 127.0.0.1 at 2017-07-10 19:15:57 -0700
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered photos/_photo.html.erb (0.8ms)
+  Rendered cars/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 23ms (Views: 21.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-10 19:15:59 -0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-10 19:16:16 -0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/drivers" for 127.0.0.1 at 2017-07-10 19:16:18 -0700
+Processing by DriversController#index as HTML
+  Rendering drivers/index.html.erb within layouts/application
+  [1m[36mDriver Load (0.2ms)[0m  [1m[34mSELECT "drivers".* FROM "drivers"[0m
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Car Load (0.0ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered drivers/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 29ms (Views: 26.2ms | ActiveRecord: 0.4ms)
+
+

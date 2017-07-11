@@ -1,27 +1,28 @@
 <p id="notice"><%= notice %></p>
-  <div class="container">
+<div class="container">
   <h1>Drivers</h1>
   <br>
-  <%= link_to "Back",  :back, :class => "btn btn-success" %>
+  <%= link_to "Home", root_path, :class => "btn btn-success" %>
   <br>
   <br>
-      <% @drivers.each do |driver| %>
-        <div class="item-details">
-          <div class="item-description">
-            <%= driver.name %>
-          </div>
-          <div class="item-description">
-            <%= get_car_info(driver.car_id)%>
-          </div>
-          <div class="action-items">
-            <div>
-              <%= link_to "Edit", edit_car_path(driver), :class => "btn btn-success"%>
-            </div>
-            <div>
-              <%= button_to "Delete", driver, :class => "btn btn-success", :method => :delete, data: { confirm: 'Are you sure?' }  %>
-            </div>
-          </div>
+  <% @drivers.each do |driver| %>
+    <div class="item-details">
+      <div class="item-description">
+        <%= driver.name %>
+      </div>
+      <div class="item-description">
+        <%= get_car_info(driver.car_id)%>
+      </div>
+      <div class="action-items">
+        <div>
+          <%= link_to "Edit", edit_car_path(driver), :class => "btn btn-success"%>
         </div>
-      <% end %>
-      <br>
-<%= link_to 'New Driver', new_driver_path, :class => "btn btn-success" %>
+        <div>
+          <%= button_to "Delete", driver, :class => "btn btn-success", :method => :delete_all, data: { confirm: 'Are you sure?' }  %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+  <br>
+  <%= link_to 'New Driver', new_driver_path, :class => "btn btn-success" %>
+</div>
